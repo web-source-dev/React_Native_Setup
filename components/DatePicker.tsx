@@ -243,7 +243,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
 
   const getCalendarStyle = (): ViewStyle => {
     return {
-      marginBottom: 20,
+      marginBottom: 0,
     };
   };
 
@@ -276,8 +276,8 @@ export const DatePicker: React.FC<DatePickerProps> = ({
       width: '14.28%', // 7 days in a week
       aspectRatio: 1,
       justifyContent: 'center',
-      alignItems: 'center',
-      marginVertical: 2,
+        alignItems: 'center',
+        marginVertical: 0,
     };
 
     if (!day) {

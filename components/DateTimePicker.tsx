@@ -216,6 +216,7 @@ export const DateTimePicker: React.FC<DateTimePickerProps> = ({
       backgroundColor: 'rgba(0, 0, 0, 0.5)',
       justifyContent: 'center',
       alignItems: 'center',
+      padding: 20,
     };
   };
 
@@ -223,10 +224,15 @@ export const DateTimePicker: React.FC<DateTimePickerProps> = ({
     return {
       backgroundColor: theme.backgroundPrimary,
       borderRadius: 12,
-      padding: 20,
-      width: '90%',
+      width: '100%',
       maxWidth: 400,
       maxHeight: '80%',
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 4 },
+      shadowOpacity: 0.15,
+      shadowRadius: 12,
+      elevation: 8,
+      overflow: 'hidden',
     };
   };
 
@@ -519,6 +525,7 @@ export const DateTimePicker: React.FC<DateTimePickerProps> = ({
         transparent
         animationType="fade"
         onRequestClose={() => setIsOpen(false)}
+        statusBarTranslucent
       >
         <View style={getModalStyle()}>
           <View style={getPickerStyle()}>
