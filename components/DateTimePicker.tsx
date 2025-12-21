@@ -226,13 +226,14 @@ export const DateTimePicker: React.FC<DateTimePickerProps> = ({
       borderRadius: 12,
       width: '100%',
       maxWidth: 400,
-      maxHeight: '80%',
+      minHeight: 450,
+      maxHeight: '90%',
       shadowColor: '#000',
       shadowOffset: { width: 0, height: 4 },
       shadowOpacity: 0.15,
       shadowRadius: 12,
       elevation: 8,
-      overflow: 'hidden',
+      padding: 20,
     };
   };
 
@@ -428,7 +429,6 @@ export const DateTimePicker: React.FC<DateTimePickerProps> = ({
   const getColumnStyle = (): ViewStyle => {
     return {
       alignItems: 'center',
-      flex: 1,
     };
   };
 
@@ -525,7 +525,6 @@ export const DateTimePicker: React.FC<DateTimePickerProps> = ({
         transparent
         animationType="fade"
         onRequestClose={() => setIsOpen(false)}
-        statusBarTranslucent
       >
         <View style={getModalStyle()}>
           <View style={getPickerStyle()}>
