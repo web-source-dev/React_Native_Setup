@@ -1,0 +1,1964 @@
+[
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Cabinetry"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Countertops"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Backsplash"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Sink & Faucet"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Appliances"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Range Hood/Ventilation"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Lighting - General"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Lighting - Task/Under-Cabinet"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Lighting - Accent"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Electrical Outlets/GFCI/AFCI"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Plumbing Supply/Drain"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Garbage Disposal"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Walls/Ceiling (Paint/Drywall)"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Pantry Shelving"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Island/Peninsula"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Layout Reconfiguration"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Windows"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Interior Doors/Trim"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Smart Devices/Sensors"
+   }
+},
+ {
+   "Room": "Kitchen",
+   "Component": {
+      "Area": "Fire Suppression (Range)"
+   }
+},
+ {
+   "Room": "Pantry",
+   "Component": {
+      "Area": "Shelving"
+   }
+},
+ {
+   "Room": "Pantry",
+   "Component": {
+      "Area": "Cabinetry"
+   }
+},
+ {
+   "Room": "Pantry",
+   "Component": {
+      "Area": "Countertops"
+   }
+},
+ {
+   "Room": "Pantry",
+   "Component": {
+      "Area": "Lighting"
+   }
+},
+ {
+   "Room": "Pantry",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Pantry",
+   "Component": {
+      "Area": "Doors/Trim"
+   }
+},
+ {
+   "Room": "Pantry",
+   "Component": {
+      "Area": "Organization Systems"
+   }
+},
+ {
+   "Room": "Pantry",
+   "Component": {
+      "Area": "Climate/Dehumidification"
+   }
+},
+ {
+   "Room": "Butler's Pantry",
+   "Component": {
+      "Area": "Cabinetry"
+   }
+},
+ {
+   "Room": "Butler's Pantry",
+   "Component": {
+      "Area": "Countertops"
+   }
+},
+ {
+   "Room": "Butler's Pantry",
+   "Component": {
+      "Area": "Bar Sink/Faucet"
+   }
+},
+ {
+   "Room": "Butler's Pantry",
+   "Component": {
+      "Area": "Under-Counter Appliances"
+   }
+},
+ {
+   "Room": "Butler's Pantry",
+   "Component": {
+      "Area": "Wine Fridge"
+   }
+},
+ {
+   "Room": "Butler's Pantry",
+   "Component": {
+      "Area": "Lighting"
+   }
+},
+ {
+   "Room": "Butler's Pantry",
+   "Component": {
+      "Area": "Backsplash"
+   }
+},
+ {
+   "Room": "Butler's Pantry",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Shower"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Tub"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Vanity/Cabinetry"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Countertops"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Sinks/Faucets"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Toilet"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Lighting - General"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Lighting - Vanity"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Electrical (GFCI/AFCI)"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Exhaust Ventilation"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Walls (Tile/Wainscot/Paint)"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Plumbing Supply/Drain"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Waterproofing"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Glass Enclosure"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Heated Floors"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Bidet/Features"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Smart Controls"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Windows"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Doors/Trim"
+   }
+},
+ {
+   "Room": "Primary Bathroom",
+   "Component": {
+      "Area": "Layout Reconfiguration"
+   }
+},
+ {
+   "Room": "Full Bathroom",
+   "Component": {
+      "Area": "Tub/Shower"
+   }
+},
+ {
+   "Room": "Full Bathroom",
+   "Component": {
+      "Area": "Vanity"
+   }
+},
+ {
+   "Room": "Full Bathroom",
+   "Component": {
+      "Area": "Countertops"
+   }
+},
+ {
+   "Room": "Full Bathroom",
+   "Component": {
+      "Area": "Sink/Faucet"
+   }
+},
+ {
+   "Room": "Full Bathroom",
+   "Component": {
+      "Area": "Toilet"
+   }
+},
+ {
+   "Room": "Full Bathroom",
+   "Component": {
+      "Area": "Lighting"
+   }
+},
+ {
+   "Room": "Full Bathroom",
+   "Component": {
+      "Area": "Electrical (GFCI)"
+   }
+},
+ {
+   "Room": "Full Bathroom",
+   "Component": {
+      "Area": "Exhaust Fan"
+   }
+},
+ {
+   "Room": "Full Bathroom",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Full Bathroom",
+   "Component": {
+      "Area": "Walls (Tile/Paint)"
+   }
+},
+ {
+   "Room": "Full Bathroom",
+   "Component": {
+      "Area": "Plumbing"
+   }
+},
+ {
+   "Room": "Full Bathroom",
+   "Component": {
+      "Area": "Waterproofing"
+   }
+},
+ {
+   "Room": "Full Bathroom",
+   "Component": {
+      "Area": "Glass/Shower Door"
+   }
+},
+ {
+   "Room": "Full Bathroom",
+   "Component": {
+      "Area": "Heated Floors"
+   }
+},
+ {
+   "Room": "Full Bathroom",
+   "Component": {
+      "Area": "Windows"
+   }
+},
+ {
+   "Room": "Full Bathroom",
+   "Component": {
+      "Area": "Doors/Trim"
+   }
+},
+ {
+   "Room": "Half Bathroom",
+   "Component": {
+      "Area": "Vanity"
+   }
+},
+ {
+   "Room": "Half Bathroom",
+   "Component": {
+      "Area": "Countertops"
+   }
+},
+ {
+   "Room": "Half Bathroom",
+   "Component": {
+      "Area": "Sink/Faucet"
+   }
+},
+ {
+   "Room": "Half Bathroom",
+   "Component": {
+      "Area": "Toilet"
+   }
+},
+ {
+   "Room": "Half Bathroom",
+   "Component": {
+      "Area": "Lighting"
+   }
+},
+ {
+   "Room": "Half Bathroom",
+   "Component": {
+      "Area": "Electrical (GFCI)"
+   }
+},
+ {
+   "Room": "Half Bathroom",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Half Bathroom",
+   "Component": {
+      "Area": "Walls/Ceiling"
+   }
+},
+ {
+   "Room": "Half Bathroom",
+   "Component": {
+      "Area": "Ventilation"
+   }
+},
+ {
+   "Room": "Half Bathroom",
+   "Component": {
+      "Area": "Doors/Trim"
+   }
+},
+ {
+   "Room": "Powder Room",
+   "Component": {
+      "Area": "Vanity/Pedestal Sink"
+   }
+},
+ {
+   "Room": "Powder Room",
+   "Component": {
+      "Area": "Countertops"
+   }
+},
+ {
+   "Room": "Powder Room",
+   "Component": {
+      "Area": "Faucet"
+   }
+},
+ {
+   "Room": "Powder Room",
+   "Component": {
+      "Area": "Toilet"
+   }
+},
+ {
+   "Room": "Powder Room",
+   "Component": {
+      "Area": "Lighting"
+   }
+},
+ {
+   "Room": "Powder Room",
+   "Component": {
+      "Area": "Accent Wall"
+   }
+},
+ {
+   "Room": "Powder Room",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Powder Room",
+   "Component": {
+      "Area": "Ventilation"
+   }
+},
+ {
+   "Room": "Powder Room",
+   "Component": {
+      "Area": "Mirror/Accessories"
+   }
+},
+ {
+   "Room": "Primary Bedroom",
+   "Component": {
+      "Area": "Closet Systems"
+   }
+},
+ {
+   "Room": "Primary Bedroom",
+   "Component": {
+      "Area": "Lighting - Overhead"
+   }
+},
+ {
+   "Room": "Primary Bedroom",
+   "Component": {
+      "Area": "Lighting - Accent"
+   }
+},
+ {
+   "Room": "Primary Bedroom",
+   "Component": {
+      "Area": "Electrical Outlets/USB"
+   }
+},
+ {
+   "Room": "Primary Bedroom",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Primary Bedroom",
+   "Component": {
+      "Area": "Windows"
+   }
+},
+ {
+   "Room": "Primary Bedroom",
+   "Component": {
+      "Area": "Interior Doors/Trim"
+   }
+},
+ {
+   "Room": "Primary Bedroom",
+   "Component": {
+      "Area": "Walls/Ceiling (Paint)"
+   }
+},
+ {
+   "Room": "Primary Bedroom",
+   "Component": {
+      "Area": "Soundproofing"
+   }
+},
+ {
+   "Room": "Primary Bedroom",
+   "Component": {
+      "Area": "Smart Shades"
+   }
+},
+ {
+   "Room": "Bedroom",
+   "Component": {
+      "Area": "Closet Systems"
+   }
+},
+ {
+   "Room": "Bedroom",
+   "Component": {
+      "Area": "Lighting"
+   }
+},
+ {
+   "Room": "Bedroom",
+   "Component": {
+      "Area": "Electrical Outlets"
+   }
+},
+ {
+   "Room": "Bedroom",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Bedroom",
+   "Component": {
+      "Area": "Windows"
+   }
+},
+ {
+   "Room": "Bedroom",
+   "Component": {
+      "Area": "Doors/Trim"
+   }
+},
+ {
+   "Room": "Bedroom",
+   "Component": {
+      "Area": "Walls/Ceiling (Paint)"
+   }
+},
+ {
+   "Room": "Bedroom",
+   "Component": {
+      "Area": "Soundproofing"
+   }
+},
+ {
+   "Room": "Bedroom",
+   "Component": {
+      "Area": "Smart Shades"
+   }
+},
+ {
+   "Room": "Living Room",
+   "Component": {
+      "Area": "Built-ins"
+   }
+},
+ {
+   "Room": "Living Room",
+   "Component": {
+      "Area": "Fireplace (Gas/Electric)"
+   }
+},
+ {
+   "Room": "Living Room",
+   "Component": {
+      "Area": "Mantel/Surround"
+   }
+},
+ {
+   "Room": "Living Room",
+   "Component": {
+      "Area": "Lighting - Overhead"
+   }
+},
+ {
+   "Room": "Living Room",
+   "Component": {
+      "Area": "Lighting - Accent"
+   }
+},
+ {
+   "Room": "Living Room",
+   "Component": {
+      "Area": "Electrical/AV"
+   }
+},
+ {
+   "Room": "Living Room",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Living Room",
+   "Component": {
+      "Area": "Windows"
+   }
+},
+ {
+   "Room": "Living Room",
+   "Component": {
+      "Area": "Doors/Trim"
+   }
+},
+ {
+   "Room": "Living Room",
+   "Component": {
+      "Area": "Walls/Ceiling (Paint)"
+   }
+},
+ {
+   "Room": "Living Room",
+   "Component": {
+      "Area": "Acoustic Treatment"
+   }
+},
+ {
+   "Room": "Living Room",
+   "Component": {
+      "Area": "Smart Shades"
+   }
+},
+ {
+   "Room": "Dining Room",
+   "Component": {
+      "Area": "Lighting (Chandelier)"
+   }
+},
+ {
+   "Room": "Dining Room",
+   "Component": {
+      "Area": "Wall Treatment (Wainscot/Wallpaper)"
+   }
+},
+ {
+   "Room": "Dining Room",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Dining Room",
+   "Component": {
+      "Area": "Windows"
+   }
+},
+ {
+   "Room": "Dining Room",
+   "Component": {
+      "Area": "Doors/Trim"
+   }
+},
+ {
+   "Room": "Dining Room",
+   "Component": {
+      "Area": "Built-ins"
+   }
+},
+ {
+   "Room": "Dining Room",
+   "Component": {
+      "Area": "Paint"
+   }
+},
+ {
+   "Room": "Family Room",
+   "Component": {
+      "Area": "Built-ins"
+   }
+},
+ {
+   "Room": "Family Room",
+   "Component": {
+      "Area": "Lighting"
+   }
+},
+ {
+   "Room": "Family Room",
+   "Component": {
+      "Area": "Electrical/AV"
+   }
+},
+ {
+   "Room": "Family Room",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Family Room",
+   "Component": {
+      "Area": "Fireplace"
+   }
+},
+ {
+   "Room": "Family Room",
+   "Component": {
+      "Area": "Windows"
+   }
+},
+ {
+   "Room": "Family Room",
+   "Component": {
+      "Area": "Doors/Trim"
+   }
+},
+ {
+   "Room": "Family Room",
+   "Component": {
+      "Area": "Paint"
+   }
+},
+ {
+   "Room": "Family Room",
+   "Component": {
+      "Area": "Acoustic Treatment"
+   }
+},
+ {
+   "Room": "Hallway",
+   "Component": {
+      "Area": "Lighting"
+   }
+},
+ {
+   "Room": "Hallway",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Hallway",
+   "Component": {
+      "Area": "Wall Treatment/Paint"
+   }
+},
+ {
+   "Room": "Hallway",
+   "Component": {
+      "Area": "Trim"
+   }
+},
+ {
+   "Room": "Hallway",
+   "Component": {
+      "Area": "Storage/Closets"
+   }
+},
+ {
+   "Room": "Hallway",
+   "Component": {
+      "Area": "Handrails"
+   }
+},
+ {
+   "Room": "Stairs",
+   "Component": {
+      "Area": "Treads/Risers"
+   }
+},
+ {
+   "Room": "Stairs",
+   "Component": {
+      "Area": "Handrails/Balusters"
+   }
+},
+ {
+   "Room": "Stairs",
+   "Component": {
+      "Area": "Newel Posts"
+   }
+},
+ {
+   "Room": "Stairs",
+   "Component": {
+      "Area": "Stringers"
+   }
+},
+ {
+   "Room": "Stairs",
+   "Component": {
+      "Area": "Lighting"
+   }
+},
+ {
+   "Room": "Stairs",
+   "Component": {
+      "Area": "Safety/Code"
+   }
+},
+ {
+   "Room": "Stairs",
+   "Component": {
+      "Area": "Runner/Finish"
+   }
+},
+ {
+   "Room": "Entry/Foyer",
+   "Component": {
+      "Area": "Door/Hardware"
+   }
+},
+ {
+   "Room": "Entry/Foyer",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Entry/Foyer",
+   "Component": {
+      "Area": "Lighting"
+   }
+},
+ {
+   "Room": "Entry/Foyer",
+   "Component": {
+      "Area": "Closet/Storage"
+   }
+},
+ {
+   "Room": "Entry/Foyer",
+   "Component": {
+      "Area": "Wall Treatment/Paint"
+   }
+},
+ {
+   "Room": "Entry/Foyer",
+   "Component": {
+      "Area": "Smart Lock/Video Doorbell"
+   }
+},
+ {
+   "Room": "Laundry Room",
+   "Component": {
+      "Area": "Washer/Dryer Hookups"
+   }
+},
+ {
+   "Room": "Laundry Room",
+   "Component": {
+      "Area": "Drain Pan"
+   }
+},
+ {
+   "Room": "Laundry Room",
+   "Component": {
+      "Area": "Utility Sink"
+   }
+},
+ {
+   "Room": "Laundry Room",
+   "Component": {
+      "Area": "Cabinetry/Shelving"
+   }
+},
+ {
+   "Room": "Laundry Room",
+   "Component": {
+      "Area": "Countertops/Folding Area"
+   }
+},
+ {
+   "Room": "Laundry Room",
+   "Component": {
+      "Area": "Lighting"
+   }
+},
+ {
+   "Room": "Laundry Room",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Laundry Room",
+   "Component": {
+      "Area": "Ventilation/Dryer Duct"
+   }
+},
+ {
+   "Room": "Laundry Room",
+   "Component": {
+      "Area": "Leak Sensors/Valves"
+   }
+},
+ {
+   "Room": "Mudroom",
+   "Component": {
+      "Area": "Cubbies/Lockers"
+   }
+},
+ {
+   "Room": "Mudroom",
+   "Component": {
+      "Area": "Benches"
+   }
+},
+ {
+   "Room": "Mudroom",
+   "Component": {
+      "Area": "Hooks"
+   }
+},
+ {
+   "Room": "Mudroom",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Mudroom",
+   "Component": {
+      "Area": "Lighting"
+   }
+},
+ {
+   "Room": "Mudroom",
+   "Component": {
+      "Area": "Doors/Trim"
+   }
+},
+ {
+   "Room": "Mudroom",
+   "Component": {
+      "Area": "Utility Sink"
+   }
+},
+ {
+   "Room": "Mechanical Room",
+   "Component": {
+      "Area": "Water Heater"
+   }
+},
+ {
+   "Room": "Mechanical Room",
+   "Component": {
+      "Area": "Boiler/Furnace"
+   }
+},
+ {
+   "Room": "Mechanical Room",
+   "Component": {
+      "Area": "Electrical Panel"
+   }
+},
+ {
+   "Room": "Mechanical Room",
+   "Component": {
+      "Area": "Subpanel"
+   }
+},
+ {
+   "Room": "Mechanical Room",
+   "Component": {
+      "Area": "Water Treatment"
+   }
+},
+ {
+   "Room": "Mechanical Room",
+   "Component": {
+      "Area": "Sump/Ejector Pump"
+   }
+},
+ {
+   "Room": "Mechanical Room",
+   "Component": {
+      "Area": "Radon Mitigation"
+   }
+},
+ {
+   "Room": "Mechanical Room",
+   "Component": {
+      "Area": "Dehumidification"
+   }
+},
+ {
+   "Room": "Mechanical Room",
+   "Component": {
+      "Area": "Ventilation/ERV/HRV"
+   }
+},
+ {
+   "Room": "Mechanical Room",
+   "Component": {
+      "Area": "Leak Detection"
+   }
+},
+ {
+   "Room": "Mechanical Room",
+   "Component": {
+      "Area": "Pipe Insulation"
+   }
+},
+ {
+   "Room": "Basement (Unfinished)",
+   "Component": {
+      "Area": "Framing"
+   }
+},
+ {
+   "Room": "Basement (Unfinished)",
+   "Component": {
+      "Area": "Insulation/Vapor Control"
+   }
+},
+ {
+   "Room": "Basement (Unfinished)",
+   "Component": {
+      "Area": "Electrical Rough"
+   }
+},
+ {
+   "Room": "Basement (Unfinished)",
+   "Component": {
+      "Area": "Plumbing Rough"
+   }
+},
+ {
+   "Room": "Basement (Unfinished)",
+   "Component": {
+      "Area": "HVAC Ducting"
+   }
+},
+ {
+   "Room": "Basement (Unfinished)",
+   "Component": {
+      "Area": "Floor Leveling/Slab"
+   }
+},
+ {
+   "Room": "Basement (Unfinished)",
+   "Component": {
+      "Area": "Egress Window/Well"
+   }
+},
+ {
+   "Room": "Basement (Unfinished)",
+   "Component": {
+      "Area": "Moisture Control"
+   }
+},
+ {
+   "Room": "Basement (Unfinished)",
+   "Component": {
+      "Area": "Sump/Drainage"
+   }
+},
+ {
+   "Room": "Basement (Unfinished)",
+   "Component": {
+      "Area": "Drywall/Paint"
+   }
+},
+ {
+   "Room": "Basement (Unfinished)",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Basement (Finished)",
+   "Component": {
+      "Area": "Lighting"
+   }
+},
+ {
+   "Room": "Basement (Finished)",
+   "Component": {
+      "Area": "Flooring"
+   }
+},
+ {
+   "Room": "Basement (Finished)",
+   "Component": {
+      "Area": "Walls/Ceiling"
+   }
+},
+ {
+   "Room": "Basement (Finished)",
+   "Component": {
+      "Area": "Built-ins"
+   }
+},
+ {
+   "Room": "Basement (Finished)",
+   "Component": {
+      "Area": "Bathroom Add/Upgrade"
+   }
+},
+ {
+   "Room": "Basement (Finished)",
+   "Component": {
+      "Area": "Bar/Kitchenette"
+   }
+},
+ {
+   "Room": "Basement (Finished)",
+   "Component": {
+      "Area": "Egress Compliance"
+   }
+},
+ {
+   "Room": "Basement (Finished)",
+   "Component": {
+      "Area": "Soundproofing"
+   }
+},
+ {
+   "Room": "Basement (Finished)",
+   "Component": {
+      "Area": "HVAC Zoning"
+   }
+},
+ {
+   "Room": "Attic",
+   "Component": {
+      "Area": "Insulation/Air Sealing"
+   }
+},
+ {
+   "Room": "Attic",
+   "Component": {
+      "Area": "Flooring/Storage"
+   }
+},
+ {
+   "Room": "Attic",
+   "Component": {
+      "Area": "Dormer/Skylight"
+   }
+},
+ {
+   "Room": "Attic",
+   "Component": {
+      "Area": "Ventilation/Baffles"
+   }
+},
+ {
+   "Room": "Attic",
+   "Component": {
+      "Area": "HVAC/DUCT Routing"
+   }
+},
+ {
+   "Room": "Attic",
+   "Component": {
+      "Area": "Structural Assessment"
+   }
+},
+ {
+   "Room": "Attic",
+   "Component": {
+      "Area": "Pull-Down Stairs/Access"
+   }
+},
+ {
+   "Room": "Garage",
+   "Component": {
+      "Area": "Door/Opener"
+   }
+},
+ {
+   "Room": "Garage",
+   "Component": {
+      "Area": "Floor Coating"
+   }
+},
+ {
+   "Room": "Garage",
+   "Component": {
+      "Area": "Storage/Slatwall"
+   }
+},
+ {
+   "Room": "Garage",
+   "Component": {
+      "Area": "Lighting/Electrical"
+   }
+},
+ {
+   "Room": "Garage",
+   "Component": {
+      "Area": "EV Charger"
+   }
+},
+ {
+   "Room": "Garage",
+   "Component": {
+      "Area": "Insulation/Drywall"
+   }
+},
+ {
+   "Room": "Garage",
+   "Component": {
+      "Area": "Weatherstripping"
+   }
+},
+ {
+   "Room": "Garage",
+   "Component": {
+      "Area": "Fire-Rated Door to House"
+   }
+},
+ {
+   "Room": "Roof",
+   "Component": {
+      "Area": "Shingles/Metal"
+   }
+},
+ {
+   "Room": "Roof",
+   "Component": {
+      "Area": "Underlayment/Ice Shield"
+   }
+},
+ {
+   "Room": "Roof",
+   "Component": {
+      "Area": "Flashing"
+   }
+},
+ {
+   "Room": "Roof",
+   "Component": {
+      "Area": "Gutters/Downspouts"
+   }
+},
+ {
+   "Room": "Roof",
+   "Component": {
+      "Area": "Skylights"
+   }
+},
+ {
+   "Room": "Roof",
+   "Component": {
+      "Area": "Ventilation (Ridge/Soffit)"
+   }
+},
+ {
+   "Room": "Roof",
+   "Component": {
+      "Area": "Sheathing Repair"
+   }
+},
+ {
+   "Room": "Siding",
+   "Component": {
+      "Area": "Vinyl/Fiber Cement/Wood"
+   }
+},
+ {
+   "Room": "Siding",
+   "Component": {
+      "Area": "Housewrap/Flashing"
+   }
+},
+ {
+   "Room": "Siding",
+   "Component": {
+      "Area": "Trim/Facia/Soffit"
+   }
+},
+ {
+   "Room": "Siding",
+   "Component": {
+      "Area": "Paint"
+   }
+},
+ {
+   "Room": "Siding",
+   "Component": {
+      "Area": "Masonry Veneer"
+   }
+},
+ {
+   "Room": "Exterior Windows",
+   "Component": {
+      "Area": "Replacement Windows"
+   }
+},
+ {
+   "Room": "Exterior Windows",
+   "Component": {
+      "Area": "Flashing/Insulation"
+   }
+},
+ {
+   "Room": "Exterior Windows",
+   "Component": {
+      "Area": "Trim"
+   }
+},
+ {
+   "Room": "Exterior Windows",
+   "Component": {
+      "Area": "Screens"
+   }
+},
+ {
+   "Room": "Exterior Windows",
+   "Component": {
+      "Area": "Storm Windows"
+   }
+},
+ {
+   "Room": "Exterior Doors",
+   "Component": {
+      "Area": "Entry Door"
+   }
+},
+ {
+   "Room": "Exterior Doors",
+   "Component": {
+      "Area": "Patio/Slider"
+   }
+},
+ {
+   "Room": "Exterior Doors",
+   "Component": {
+      "Area": "Storm Door"
+   }
+},
+ {
+   "Room": "Exterior Doors",
+   "Component": {
+      "Area": "Hardware/Smart Lock"
+   }
+},
+ {
+   "Room": "Exterior Doors",
+   "Component": {
+      "Area": "Weatherstripping"
+   }
+},
+ {
+   "Room": "Exterior Doors",
+   "Component": {
+      "Area": "Threshold"
+   }
+},
+ {
+   "Room": "Porch",
+   "Component": {
+      "Area": "Structure/Footings"
+   }
+},
+ {
+   "Room": "Porch",
+   "Component": {
+      "Area": "Decking"
+   }
+},
+ {
+   "Room": "Porch",
+   "Component": {
+      "Area": "Railing"
+   }
+},
+ {
+   "Room": "Porch",
+   "Component": {
+      "Area": "Roof/Ceiling"
+   }
+},
+ {
+   "Room": "Porch",
+   "Component": {
+      "Area": "Lighting/Fans"
+   }
+},
+ {
+   "Room": "Porch",
+   "Component": {
+      "Area": "Screens"
+   }
+},
+ {
+   "Room": "Porch",
+   "Component": {
+      "Area": "Stairs"
+   }
+},
+ {
+   "Room": "Deck",
+   "Component": {
+      "Area": "Structure/Footings"
+   }
+},
+ {
+   "Room": "Deck",
+   "Component": {
+      "Area": "Framing"
+   }
+},
+ {
+   "Room": "Deck",
+   "Component": {
+      "Area": "Decking"
+   }
+},
+ {
+   "Room": "Deck",
+   "Component": {
+      "Area": "Railing"
+   }
+},
+ {
+   "Room": "Deck",
+   "Component": {
+      "Area": "Stairs"
+   }
+},
+ {
+   "Room": "Deck",
+   "Component": {
+      "Area": "Lighting"
+   }
+},
+ {
+   "Room": "Deck",
+   "Component": {
+      "Area": "Skirting"
+   }
+},
+ {
+   "Room": "Deck",
+   "Component": {
+      "Area": "Waterproofing"
+   }
+},
+ {
+   "Room": "Patio",
+   "Component": {
+      "Area": "Pavers/Concrete"
+   }
+},
+ {
+   "Room": "Patio",
+   "Component": {
+      "Area": "Borders/Edging"
+   }
+},
+ {
+   "Room": "Patio",
+   "Component": {
+      "Area": "Drainage/Grading"
+   }
+},
+ {
+   "Room": "Patio",
+   "Component": {
+      "Area": "Seating/Fire Feature"
+   }
+},
+ {
+   "Room": "Patio",
+   "Component": {
+      "Area": "Lighting"
+   }
+},
+ {
+   "Room": "Driveway",
+   "Component": {
+      "Area": "Asphalt/Concrete"
+   }
+},
+ {
+   "Room": "Driveway",
+   "Component": {
+      "Area": "Resurfacing"
+   }
+},
+ {
+   "Room": "Driveway",
+   "Component": {
+      "Area": "Drainage/Apron"
+   }
+},
+ {
+   "Room": "Driveway",
+   "Component": {
+      "Area": "Edging"
+   }
+},
+ {
+   "Room": "Driveway",
+   "Component": {
+      "Area": "Heated Systems"
+   }
+},
+ {
+   "Room": "Walkways",
+   "Component": {
+      "Area": "Pavers/Concrete"
+   }
+},
+ {
+   "Room": "Walkways",
+   "Component": {
+      "Area": "Edging"
+   }
+},
+ {
+   "Room": "Walkways",
+   "Component": {
+      "Area": "Lighting"
+   }
+},
+ {
+   "Room": "Walkways",
+   "Component": {
+      "Area": "Drainage/Grading"
+   }
+},
+ {
+   "Room": "Site Exterior",
+   "Component": {
+      "Area": "Grading/Drainage"
+   }
+},
+ {
+   "Room": "Site Exterior",
+   "Component": {
+      "Area": "French Drains"
+   }
+},
+ {
+   "Room": "Site Exterior",
+   "Component": {
+      "Area": "Retaining Walls"
+   }
+},
+ {
+   "Room": "Site Exterior",
+   "Component": {
+      "Area": "Fencing/Gates"
+   }
+},
+ {
+   "Room": "Site Exterior",
+   "Component": {
+      "Area": "Irrigation"
+   }
+},
+ {
+   "Room": "Site Exterior",
+   "Component": {
+      "Area": "Landscaping"
+   }
+},
+ {
+   "Room": "Site Exterior",
+   "Component": {
+      "Area": "Exterior Lighting"
+   }
+},
+ {
+   "Room": "Site Exterior",
+   "Component": {
+      "Area": "Sheds"
+   }
+},
+ {
+   "Room": "Whole-Home (Electrical)",
+   "Component": {
+      "Area": "Service Upgrade"
+   }
+},
+ {
+   "Room": "Whole-Home (Electrical)",
+   "Component": {
+      "Area": "Panel/Subpanel"
+   }
+},
+ {
+   "Room": "Whole-Home (Electrical)",
+   "Component": {
+      "Area": "Wiring Replacements"
+   }
+},
+ {
+   "Room": "Whole-Home (Electrical)",
+   "Component": {
+      "Area": "GFCI/AFCI"
+   }
+},
+ {
+   "Room": "Whole-Home (Electrical)",
+   "Component": {
+      "Area": "Receptacle/USB Upgrades"
+   }
+},
+ {
+   "Room": "Whole-Home (Electrical)",
+   "Component": {
+      "Area": "Lighting Retrofits"
+   }
+},
+ {
+   "Room": "Whole-Home (Electrical)",
+   "Component": {
+      "Area": "Surge Protection"
+   }
+},
+ {
+   "Room": "Whole-Home (Electrical)",
+   "Component": {
+      "Area": "Generator/Transfer Switch"
+   }
+},
+ {
+   "Room": "Whole-Home (Plumbing)",
+   "Component": {
+      "Area": "Repipe (Supply)"
+   }
+},
+ {
+   "Room": "Whole-Home (Plumbing)",
+   "Component": {
+      "Area": "Drain Replacement"
+   }
+},
+ {
+   "Room": "Whole-Home (Plumbing)",
+   "Component": {
+      "Area": "Cleanouts"
+   }
+},
+ {
+   "Room": "Whole-Home (Plumbing)",
+   "Component": {
+      "Area": "Main Shutoff/Valves"
+   }
+},
+ {
+   "Room": "Whole-Home (Plumbing)",
+   "Component": {
+      "Area": "Water Treatment/Softener"
+   }
+},
+ {
+   "Room": "Whole-Home (Plumbing)",
+   "Component": {
+      "Area": "Recirculation Pump"
+   }
+},
+ {
+   "Room": "Whole-Home (Plumbing)",
+   "Component": {
+      "Area": "Leak Sensors/Auto-Shutoff"
+   }
+},
+ {
+   "Room": "Whole-Home (HVAC)",
+   "Component": {
+      "Area": "Furnace/Boiler Replacement"
+   }
+},
+ {
+   "Room": "Whole-Home (HVAC)",
+   "Component": {
+      "Area": "AC/Heat Pump"
+   }
+},
+ {
+   "Room": "Whole-Home (HVAC)",
+   "Component": {
+      "Area": "Mini-Splits"
+   }
+},
+ {
+   "Room": "Whole-Home (HVAC)",
+   "Component": {
+      "Area": "Duct Replacement/Sealing"
+   }
+},
+ {
+   "Room": "Whole-Home (HVAC)",
+   "Component": {
+      "Area": "Zoning/Thermostats"
+   }
+},
+ {
+   "Room": "Whole-Home (HVAC)",
+   "Component": {
+      "Area": "ERV/HRV Ventilation"
+   }
+},
+ {
+   "Room": "Whole-Home (Insulation & Air Sealing)",
+   "Component": {
+      "Area": "Attic Insulation"
+   }
+},
+ {
+   "Room": "Whole-Home (Insulation & Air Sealing)",
+   "Component": {
+      "Area": "Wall Insulation"
+   }
+},
+ {
+   "Room": "Whole-Home (Insulation & Air Sealing)",
+   "Component": {
+      "Area": "Basement/Crawl Insulation"
+   }
+},
+ {
+   "Room": "Whole-Home (Insulation & Air Sealing)",
+   "Component": {
+      "Area": "Sealing (Foam/Caulking)"
+   }
+},
+ {
+   "Room": "Whole-Home (Insulation & Air Sealing)",
+   "Component": {
+      "Area": "Blower Door Test"
+   }
+},
+ {
+   "Room": "Whole-Home (Smart/Low-Voltage)",
+   "Component": {
+      "Area": "Thermostats"
+   }
+},
+ {
+   "Room": "Whole-Home (Smart/Low-Voltage)",
+   "Component": {
+      "Area": "Cameras/Doorbells"
+   }
+},
+ {
+   "Room": "Whole-Home (Smart/Low-Voltage)",
+   "Component": {
+      "Area": "Smart Locks/Shades"
+   }
+},
+ {
+   "Room": "Whole-Home (Smart/Low-Voltage)",
+   "Component": {
+      "Area": "Network/WiFi"
+   }
+},
+ {
+   "Room": "Whole-Home (Smart/Low-Voltage)",
+   "Component": {
+      "Area": "Audio/Video Prewire"
+   }
+},
+ {
+   "Room": "Whole-Home (Smart/Low-Voltage)",
+   "Component": {
+      "Area": "Alarm/Sensors"
+   }
+},
+ {
+   "Room": "Whole-Home (Smart/Low-Voltage)",
+   "Component": {
+      "Area": "Water Leak Detection"
+   }
+},
+ {
+   "Room": "Whole-Home (Safety/Accessibility)",
+   "Component": {
+      "Area": "Smoke/CO Detectors"
+   }
+},
+ {
+   "Room": "Whole-Home (Safety/Accessibility)",
+   "Component": {
+      "Area": "Handrails/Grab Bars"
+   }
+},
+ {
+   "Room": "Whole-Home (Safety/Accessibility)",
+   "Component": {
+      "Area": "Zero-Threshold Shower"
+   }
+},
+ {
+   "Room": "Whole-Home (Safety/Accessibility)",
+   "Component": {
+      "Area": "Wider Doors"
+   }
+},
+ {
+   "Room": "Whole-Home (Safety/Accessibility)",
+   "Component": {
+      "Area": "Ramps"
+   }
+},
+ {
+   "Room": "Whole-Home (Safety/Accessibility)",
+   "Component": {
+      "Area": "Non-Slip Flooring"
+   }
+},
+ {
+   "Room": "Whole-Home (Safety/Accessibility)",
+   "Component": {
+      "Area": "Lighting/Wayfinding"
+   }
+},
+ {
+   "Room": "Whole-Home (Interior Finishes)",
+   "Component": {
+      "Area": "Interior Doors"
+   }
+},
+ {
+   "Room": "Whole-Home (Interior Finishes)",
+   "Component": {
+      "Area": "Trim/Baseboards"
+   }
+},
+ {
+   "Room": "Whole-Home (Interior Finishes)",
+   "Component": {
+      "Area": "Wall Repair"
+   }
+},
+ {
+   "Room": "Whole-Home (Interior Finishes)",
+   "Component": {
+      "Area": "Paint"
+   }
+},
+ {
+   "Room": "Whole-Home (Interior Finishes)",
+   "Component": {
+      "Area": "Flooring (Hardwood/LVP/Tile/Carpet)"
+   }
+},
+ {
+   "Room": "Whole-Home (Interior Finishes)",
+   "Component": {
+      "Area": "Ceilings/Texture Removal"
+   }
+}
+]

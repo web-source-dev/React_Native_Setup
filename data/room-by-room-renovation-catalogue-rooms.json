@@ -1,0 +1,119 @@
+[
+ {
+   "Room": "Attic"
+ },
+ {
+   "Room": "Basement (Finished)"
+ },
+ {
+   "Room": "Basement (Unfinished)"
+ },
+ {
+   "Room": "Bedroom"
+ },
+ {
+   "Room": "Butler's Pantry"
+ },
+ {
+   "Room": "Deck"
+ },
+ {
+   "Room": "Dining Room"
+ },
+ {
+   "Room": "Driveway"
+ },
+ {
+   "Room": "Entry/Foyer"
+ },
+ {
+   "Room": "Exterior Doors"
+ },
+ {
+   "Room": "Exterior Windows"
+ },
+ {
+   "Room": "Family Room"
+ },
+ {
+   "Room": "Full Bathroom"
+ },
+ {
+   "Room": "Garage"
+ },
+ {
+   "Room": "Half Bathroom"
+ },
+ {
+   "Room": "Hallway"
+ },
+ {
+   "Room": "Kitchen"
+ },
+ {
+   "Room": "Laundry Room"
+ },
+ {
+   "Room": "Living Room"
+ },
+ {
+   "Room": "Mechanical Room"
+ },
+ {
+   "Room": "Mudroom"
+ },
+ {
+   "Room": "Pantry"
+ },
+ {
+   "Room": "Patio"
+ },
+ {
+   "Room": "Porch"
+ },
+ {
+   "Room": "Powder Room"
+ },
+ {
+   "Room": "Primary Bathroom"
+ },
+ {
+   "Room": "Primary Bedroom"
+ },
+ {
+   "Room": "Roof"
+ },
+ {
+   "Room": "Siding"
+ },
+ {
+   "Room": "Site Exterior"
+ },
+ {
+   "Room": "Stairs"
+ },
+ {
+   "Room": "Walkways"
+ },
+ {
+   "Room": "Whole-Home (Electrical)"
+ },
+ {
+   "Room": "Whole-Home (HVAC)"
+ },
+ {
+   "Room": "Whole-Home (Insulation & Air Sealing)"
+ },
+ {
+   "Room": "Whole-Home (Interior Finishes)"
+ },
+ {
+   "Room": "Whole-Home (Plumbing)"
+ },
+ {
+   "Room": "Whole-Home (Safety/Accessibility)"
+ },
+ {
+   "Room": "Whole-Home (Smart/Low-Voltage)"
+ }
+]
