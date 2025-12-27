@@ -175,6 +175,7 @@ export function MediaProvider({ children }: { children: React.ReactNode }) {
               locationTimestamp: (processedAsset as any).location?.timestamp,
               userId: undefined,
               isPublic: true,
+              isDeleted: false, // New records are not deleted
               syncStatus: 'pending',
               createdAt: Date.now(),
               updatedAt: Date.now(),

@@ -40,6 +40,9 @@ export const mediaFiles = sqliteTable('media_files', {
   // Sync status
   syncStatus: text('sync_status').notNull().default('pending'), // 'pending', 'syncing', 'synced', 'failed'
 
+  // Soft delete flag
+  isDeleted: integer('is_deleted', { mode: 'boolean' }).notNull().default(false), // Soft delete flag
+
   // Timestamps (epoch milliseconds)
   createdAt: integer('created_at').notNull(), // Creation timestamp (epoch ms)
   updatedAt: integer('updated_at').notNull(), // Last update timestamp (epoch ms)

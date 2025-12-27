@@ -11,6 +11,9 @@ import {
 } from 'react-native';
 import { useTheme } from '../../theme';
 import { useMedia } from '../../lib/database/hooks';
+import { useSync } from '../../lib/database/sync';
+import { useAuth } from '../../context/authcontext';
+import { router } from 'expo-router';
 import {
   Button,
   Card,
@@ -32,10 +35,14 @@ export default function MediaLibrary() {
     getStats,
     refresh,
   } = useMedia();
+  
+  const { user, isAuthenticated, logout, isLoading: authLoading } = useAuth();
+  const { isSyncing, syncAll, syncModel, lastSyncTime } = useSync();
 
   const [stats, setStats] = useState<any>(null);
   const [alertVisible, setAlertVisible] = useState(false);
   const [alertMessage, setAlertMessage] = useState('');
+  const [syncResults, setSyncResults] = useState<any>(null);
 
   const showAlert = (message: string) => {
     setAlertMessage(message);
@@ -54,6 +61,73 @@ export default function MediaLibrary() {
   const handleRefresh = async () => {
     await refresh();
     await loadStats();
+  };
+
+  const handleSync = async () => {
+    if (!isAuthenticated) {
+      showAlert('Please login to sync');
+      return;
+    }
+
+    try {
+      showAlert('Starting sync...');
+      const results = await syncAll({
+        onProgress: (modelName, progress) => {
+          console.log(`Syncing ${modelName}: ${progress.current}/${progress.total}`);
+        },
+        onComplete: (results) => {
+          setSyncResults(results);
+          const totalSucceeded = results.reduce((sum, r) => sum + r.succeeded, 0);
+          const totalFailed = results.reduce((sum, r) => sum + r.failed, 0);
+          showAlert(`Sync complete! Succeeded: ${totalSucceeded}, Failed: ${totalFailed}`);
+          loadStats(); // Refresh stats after sync
+        },
+        onError: (modelName, error) => {
+          console.error(`Sync error for ${modelName}:`, error);
+        },
+      });
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : 'Sync failed';
+      showAlert(`Sync failed: ${errorMessage}`);
+    }
+  };
+
+  const handleSyncMedia = async () => {
+    if (!isAuthenticated) {
+      showAlert('Please login to sync');
+      return;
+    }
+
+    try {
+      showAlert('Syncing media...');
+      const result = await syncModel('media');
+      setSyncResults([result]);
+      showAlert(
+        `Media sync complete! Succeeded: ${result.succeeded}, Failed: ${result.failed}`
+      );
+      loadStats(); // Refresh stats after sync
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : 'Sync failed';
+      showAlert(`Media sync failed: ${errorMessage}`);
+    }
+  };
+
+  const handleLogout = async () => {
+    Alert.alert(
+      'Logout',
+      'Are you sure you want to logout?',
+      [
+        { text: 'Cancel', style: 'cancel' },
+        {
+          text: 'Logout',
+          style: 'destructive',
+          onPress: async () => {
+            await logout();
+            showAlert('Logged out successfully');
+          },
+        },
+      ]
+    );
   };
 
   const handleDelete = async (id: number, filename: string) => {
@@ -300,13 +374,136 @@ export default function MediaLibrary() {
           <Text style={[styles.subtitle, { color: theme.textSecondary }]}>
             Database-stored media files
           </Text>
-          <Button
-            title="Refresh"
-            onPress={handleRefresh}
-            size="sm"
-            variant="outline"
-            leftIcon={<Ionicons name="refresh" size={14} color={theme.primary} />}
-          />
+          
+          {/* Authentication Section */}
+          <Card variant="outlined" style={styles.authCard}>
+            {isAuthenticated ? (
+              <View style={styles.authInfo}>
+                <View style={styles.authHeader}>
+                  <Ionicons name="checkmark-circle" size={20} color={theme.success} />
+                  <Text style={[styles.authStatus, { color: theme.success }]}>
+                    Authenticated
+                  </Text>
+                </View>
+                {user && (
+                  <View style={styles.userInfo}>
+                    <Text style={[styles.userEmail, { color: theme.textPrimary }]}>
+                      {user.email}
+                    </Text>
+                    {user.firstName || user.lastName ? (
+                      <Text style={[styles.userName, { color: theme.textSecondary }]}>
+                        {[user.firstName, user.lastName].filter(Boolean).join(' ')}
+                      </Text>
+                    ) : null}
+                    <Text style={[styles.userRole, { color: theme.primary }]}>
+                      Role: {user.role}
+                    </Text>
+                  </View>
+                )}
+                <View style={styles.authActions}>
+                  <Button
+                    title="Logout"
+                    onPress={handleLogout}
+                    size="sm"
+                    variant="outline"
+                    style={styles.authButton}
+                    leftIcon={<Ionicons name="log-out" size={14} color={theme.error} />}
+                  />
+                </View>
+              </View>
+            ) : (
+              <View style={styles.authInfo}>
+                <View style={styles.authHeader}>
+                  <Ionicons name="alert-circle" size={20} color={theme.warning} />
+                  <Text style={[styles.authStatus, { color: theme.warning }]}>
+                    Not Authenticated
+                  </Text>
+                </View>
+                <Text style={[styles.authMessage, { color: theme.textSecondary }]}>
+                  Please login to sync media with the server
+                </Text>
+                <View style={styles.authActions}>
+                  <Button
+                    title="Login"
+                    onPress={() => router.push('/(auth)/login')}
+                    size="sm"
+                    style={styles.authButton}
+                    leftIcon={<Ionicons name="log-in" size={14} color={theme.primary} />}
+                  />
+                  <Button
+                    title="Register"
+                    onPress={() => router.push('/(auth)/register')}
+                    size="sm"
+                    variant="outline"
+                    style={styles.authButton}
+                    leftIcon={<Ionicons name="person-add" size={14} color={theme.primary} />}
+                  />
+                </View>
+              </View>
+            )}
+          </Card>
+
+          {/* Sync Section */}
+          <View style={styles.syncSection}>
+            <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
+              Sync Operations
+            </Text>
+            <View style={styles.syncButtons}>
+              <Button
+                title={isSyncing ? 'Syncing...' : 'Sync All'}
+                onPress={handleSync}
+                disabled={isSyncing || !isAuthenticated}
+                size="sm"
+                style={styles.syncButton}
+                leftIcon={
+                  <Ionicons
+                    name={isSyncing ? 'sync' : 'cloud-upload'}
+                    size={14}
+                    color={theme.primary}
+                  />
+                }
+              />
+              <Button
+                title={isSyncing ? 'Syncing...' : 'Sync Media'}
+                onPress={handleSyncMedia}
+                disabled={isSyncing || !isAuthenticated}
+                size="sm"
+                variant="outline"
+                style={styles.syncButton}
+                leftIcon={
+                  <Ionicons
+                    name={isSyncing ? 'sync' : 'images'}
+                    size={14}
+                    color={theme.primary}
+                  />
+                }
+              />
+              <Button
+                title="Refresh"
+                onPress={handleRefresh}
+                size="sm"
+                variant="outline"
+                style={styles.syncButton}
+                leftIcon={<Ionicons name="refresh" size={14} color={theme.primary} />}
+              />
+            </View>
+            {lastSyncTime && (
+              <Text style={[styles.lastSyncTime, { color: theme.textTertiary }]}>
+                Last sync: {new Date(lastSyncTime).toLocaleString()}
+              </Text>
+            )}
+            {syncResults && (
+              <View style={styles.syncResults}>
+                {syncResults.map((result: any, index: number) => (
+                  <View key={index} style={styles.syncResultItem}>
+                    <Text style={[styles.syncResultText, { color: theme.textPrimary }]}>
+                      {result.modelName}: {result.succeeded} succeeded, {result.failed} failed
+                    </Text>
+                  </View>
+                ))}
+              </View>
+            )}
+          </View>
         </View>
 
         {/* Stats */}
@@ -568,5 +765,88 @@ const styles = StyleSheet.create({
     fontSize: 14,
     textAlign: 'center',
     maxWidth: 280,
+  },
+  authCard: {
+    marginBottom: 16,
+    padding: 16,
+  },
+  authInfo: {
+    width: '100%',
+  },
+  authHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginBottom: 12,
+  },
+  authStatus: {
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  authMessage: {
+    fontSize: 14,
+    marginBottom: 12,
+    textAlign: 'center',
+  },
+  userInfo: {
+    marginBottom: 12,
+    padding: 12,
+    backgroundColor: 'rgba(0,0,0,0.03)',
+    borderRadius: 8,
+  },
+  userEmail: {
+    fontSize: 16,
+    fontWeight: '600',
+    marginBottom: 4,
+  },
+  userName: {
+    fontSize: 14,
+    marginBottom: 4,
+  },
+  userRole: {
+    fontSize: 12,
+    fontWeight: '500',
+    textTransform: 'capitalize',
+  },
+  authActions: {
+    flexDirection: 'row',
+    gap: 8,
+    justifyContent: 'center',
+  },
+  authButton: {
+    flex: 1,
+  },
+  syncSection: {
+    marginBottom: 24,
+    padding: 16,
+    backgroundColor: 'rgba(0,0,0,0.02)',
+    borderRadius: 8,
+  },
+  syncButtons: {
+    flexDirection: 'row',
+    gap: 8,
+    marginBottom: 8,
+    flexWrap: 'wrap',
+  },
+  syncButton: {
+    flex: 1,
+    minWidth: 100,
+  },
+  lastSyncTime: {
+    fontSize: 12,
+    textAlign: 'center',
+    marginTop: 8,
+  },
+  syncResults: {
+    marginTop: 12,
+    padding: 12,
+    backgroundColor: 'rgba(0,0,0,0.03)',
+    borderRadius: 8,
+  },
+  syncResultItem: {
+    marginBottom: 4,
+  },
+  syncResultText: {
+    fontSize: 12,
   },
 });

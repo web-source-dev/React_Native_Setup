@@ -30,8 +30,13 @@ export type {
   DeviceHookReturn,
 } from './types';
 
+// Property hook
+export { useProperty } from './useProperty';
+
 // Context exports
 export { MediaProvider, useMediaContext } from '../context/MediaContext';
 export { LocationProvider, useLocationContext } from '../context/LocationContext';
 export { NetworkProvider, useNetworkContext } from '../context/NetworkContext';
 export { DeviceProvider, useDeviceContext } from '../context/DeviceContext';
+export { PropertyProvider, usePropertyContext } from '../context/PropertyContext';
+export { ScopeProvider, useScopeContext } from '../context/ScopeContext';

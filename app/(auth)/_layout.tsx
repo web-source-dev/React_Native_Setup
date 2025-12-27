@@ -2,7 +2,7 @@ import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useTheme } from "../../theme/ThemeContext";
 
-function TabLayout() {
+export default function AuthLayout() {
   const { theme } = useTheme();
 
   return (
@@ -19,69 +19,44 @@ function TabLayout() {
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="login"
         options={{
-          title: "Home",
+          title: "Sign In",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="home" size={size} color={color} />
+            <Ionicons name="log-in" size={size} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="showcase"
+        name="register"
         options={{
-          title: "Showcase",
+          title: "Sign Up",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="apps" size={size} color={color} />
+            <Ionicons name="person-add" size={size} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="properties"
+        name="forgot-password"
         options={{
-          title: "Properties",
+          title: "Reset",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="home" size={size} color={color} />
+            <Ionicons name="key" size={size} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="scope"
+        name="verify-otp"
         options={{
-          href: null, // Hide from tab bar - accessed via property selection
+          href: null, // This hides the tab but keeps the screen accessible via navigation
         }}
       />
       <Tabs.Screen
-        name="profile"
-        options={{
-          title: "Profile",
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="person" size={size} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="settings"
-        options={{
-          title: "Settings",
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="settings" size={size} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="help"
+        name="reset-password"
         options={{
           href: null, // This hides the tab but keeps the screen accessible via navigation
         }}
       />
     </Tabs>
-  );
-}
-
-export default function RootLayout() {
-  return (
-    
-      <TabLayout />
   );
 }

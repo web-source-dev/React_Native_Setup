@@ -174,8 +174,10 @@ export function useMedia(): MediaHookReturn {
       setIsLoading(true);
       setError(null);
 
+      // Soft delete - marks as deleted and sets sync status to pending
       const success = await deleteMediaFile(id);
       if (success) {
+        // Remove from local state (soft deleted items are filtered out)
         setMediaFiles(prev => prev.filter(file => file.id !== id));
       }
 

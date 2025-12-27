@@ -1,6 +1,6 @@
 import { getDb } from '../config/drizzle';
 import { mediaFiles, type MediaFile, type NewMediaFile } from '../schema/media.schema';
-import { eq } from 'drizzle-orm';
+import { eq, and } from 'drizzle-orm';
 
 // Helper function to create media_files table
 async function createMediaFilesTable(db: any): Promise<void> {
@@ -20,6 +20,7 @@ async function createMediaFilesTable(db: any): Promise<void> {
       user_id TEXT,
       is_public INTEGER DEFAULT 1,
       sync_status TEXT DEFAULT 'pending',
+      is_deleted INTEGER DEFAULT 0,
       created_at INTEGER NOT NULL,
       updated_at INTEGER NOT NULL
     )
@@ -54,10 +55,13 @@ export const createMediaFile = async (mediaData: NewMediaFile): Promise<MediaFil
 };
 
 // READ operations
-export const getMediaFileById = async (id: number): Promise<MediaFile | null> => {
+export const getMediaFileById = async (id: number, includeDeleted: boolean = false): Promise<MediaFile | null> => {
   try {
     const db = getDb();
-    const result = await db.select().from(mediaFiles).where(eq(mediaFiles.id, id)).limit(1);
+    const conditions = includeDeleted 
+      ? eq(mediaFiles.id, id)
+      : and(eq(mediaFiles.id, id), eq(mediaFiles.isDeleted, false));
+    const result = await db.select().from(mediaFiles).where(conditions).limit(1);
     return result[0] || null;
   } catch (error) {
     console.error('Failed to get media file by ID:', error);
@@ -65,10 +69,13 @@ export const getMediaFileById = async (id: number): Promise<MediaFile | null> =>
   }
 };
 
-export const getAllMediaFiles = async (): Promise<MediaFile[]> => {
+export const getAllMediaFiles = async (includeDeleted: boolean = false): Promise<MediaFile[]> => {
   try {
     const db = getDb();
-    return await db.select().from(mediaFiles);
+    if (includeDeleted) {
+      return await db.select().from(mediaFiles);
+    }
+    return await db.select().from(mediaFiles).where(eq(mediaFiles.isDeleted, false));
   } catch (error) {
     console.error('Failed to get all media files:', error);
     // If table doesn't exist, return empty array
@@ -79,10 +86,13 @@ export const getAllMediaFiles = async (): Promise<MediaFile[]> => {
   }
 };
 
-export const getMediaFilesByType = async (type: string): Promise<MediaFile[]> => {
+export const getMediaFilesByType = async (type: string, includeDeleted: boolean = false): Promise<MediaFile[]> => {
   try {
     const db = getDb();
-    return await db.select().from(mediaFiles).where(eq(mediaFiles.type, type));
+    const conditions = includeDeleted
+      ? eq(mediaFiles.type, type)
+      : and(eq(mediaFiles.type, type), eq(mediaFiles.isDeleted, false));
+    return await db.select().from(mediaFiles).where(conditions);
   } catch (error) {
     console.error('Failed to get media files by type:', error);
     return [];
@@ -95,9 +105,33 @@ export const getPendingSyncMediaFiles = async (): Promise<MediaFile[]> => {
     return await db
       .select()
       .from(mediaFiles)
-      .where(eq(mediaFiles.syncStatus, 'pending'));
+      .where(
+        and(
+          eq(mediaFiles.syncStatus, 'pending'),
+          eq(mediaFiles.isDeleted, false)
+        )
+      );
   } catch (error) {
     console.error('Failed to get pending sync media files:', error);
+    return [];
+  }
+};
+
+// Get deleted items that need to be synced
+export const getDeletedMediaFilesForSync = async (): Promise<MediaFile[]> => {
+  try {
+    const db = getDb();
+    return await db
+      .select()
+      .from(mediaFiles)
+      .where(
+        and(
+          eq(mediaFiles.isDeleted, true),
+          eq(mediaFiles.syncStatus, 'pending')
+        )
+      );
+  } catch (error) {
+    console.error('Failed to get deleted media files for sync:', error);
     return [];
   }
 };
@@ -145,14 +179,54 @@ export const updateMediaSyncStatus = async (
   }
 };
 
-// DELETE operations
+// DELETE operations (Soft Delete)
 export const deleteMediaFile = async (id: number): Promise<boolean> => {
+  try {
+    const db = getDb();
+    const result = await db
+      .update(mediaFiles)
+      .set({ 
+        isDeleted: true, 
+        syncStatus: 'pending',
+        updatedAt: Date.now()
+      })
+      .where(eq(mediaFiles.id, id))
+      .returning();
+    return result.length > 0;
+  } catch (error) {
+    console.error('Failed to soft delete media file:', error);
+    return false;
+  }
+};
+
+// Permanently delete (for cleanup purposes, use with caution)
+export const permanentlyDeleteMediaFile = async (id: number): Promise<boolean> => {
   try {
     const db = getDb();
     await db.delete(mediaFiles).where(eq(mediaFiles.id, id));
     return true;
   } catch (error) {
-    console.error('Failed to delete media file:', error);
+    console.error('Failed to permanently delete media file:', error);
+    return false;
+  }
+};
+
+// Restore deleted file
+export const restoreMediaFile = async (id: number): Promise<boolean> => {
+  try {
+    const db = getDb();
+    const result = await db
+      .update(mediaFiles)
+      .set({ 
+        isDeleted: false,
+        syncStatus: 'pending',
+        updatedAt: Date.now()
+      })
+      .where(eq(mediaFiles.id, id))
+      .returning();
+    return result.length > 0;
+  } catch (error) {
+    console.error('Failed to restore media file:', error);
     return false;
   }
 };
@@ -189,10 +263,15 @@ export const deleteMediaFilesByIds = async (ids: number[]): Promise<number> => {
   }
 };
 
+// Get all items including deleted (for sync purposes)
+export const getAllMediaFilesIncludingDeleted = async (): Promise<MediaFile[]> => {
+  return getAllMediaFiles(true);
+};
+
 // UTILITY operations
 export const getMediaStats = async () => {
   try {
-    const allFiles = await getAllMediaFiles();
+    const allFiles = await getAllMediaFiles(); // Excludes deleted by default
 
     const stats = {
       total: allFiles.length,
